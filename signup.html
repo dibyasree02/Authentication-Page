@@ -15,11 +15,12 @@
                 </label>
                 <input type="text" name="username" placeholder="Usernsame" required="">
                 <input type="email" name="email" placeholder="Email" required="">
-				<input type="password" name="pswd" placeholder="Enter Password" required="">
-                <input type="password" name="pswd" placeholder="Confirm Password" required="">
-				<button>Sign Up</button>
+				<input type="password" id="setPass" name="pswd" placeholder="Enter Password" required="" onchange="setnewPass()">
+                <input type="password" id="cnfrPass" name="pswd" placeholder="Confirm Password" required="" onchange="setcnfrPass()">
+				<button type="submit" id="signUp" onclick="checkvalid()">Sign Up</button>
             </form>
         </div>
         </div>>
     </body>
+    <script src="signup.js"></script>
 </html>
