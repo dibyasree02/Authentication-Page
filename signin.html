@@ -1,27 +1,39 @@
 <!DOCTYPE html>
-<html lang="en-US">
-    <head>
-        <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <link rel="stylesheet" href="signin.css">
-        <title> Sign In Page </title>
-    </head>
-    <body>
-        <div class="main">
-        <div class="Sign In">
-            <form>
-                <label>
-                    Sign In
-                </label>
-                <input type="email" name="email" placeholder="Email" required="">
-				<input type="password" name="pswd" placeholder="Password" required="">
-				<button>Login</button>
-                <div class="signup">
-                    <a href="signup.html">New User? Sign up...</a>
-                    <a href="forgotpassword.html">Forgot Password? Reset Here...</a>
-                </div>
-            </form>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Form</title>
+  <link rel="stylesheet" href="signin.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+  <div class="wrapper">
+    <header class="label">Sign In</header>
+    <form action="main.html">
+      <div class="field email">
+        <div class="input-area">
+          <input type="text" placeholder="Email Address"  >
+          <i class="icon fas fa-envelope"></i>
+          <i class="error error-icon fas fa-exclamation-circle"></i>
         </div>
-    </div>
-    </body>
+        <div class="error error-txt">Email can't be blank</div>
+      </div>
+      <div class="field password">
+        <div class="input-area">
+          <input type="password" placeholder="Password">
+          <i class="icon fas fa-lock"></i>
+          <i class="error error-icon fas fa-exclamation-circle"></i>
+        </div>
+        <div class="error error-txt">Password can't be blank</div>
+      </div>
+      <div class="pass-txt"><a href="forgotpassword.html">Forgot password ? Reset...</a></div>
+      <input type="submit" value="Login">
+    </form>
+    <div class="sign-txt"> <a href="signup.html">Not User ? Sign Up now...</a></div>
+  </div>
+
+  <script src="signin.js"></script>
+
+</body>
 </html>
