@@ -13,11 +13,13 @@
                 <label>
                     Set Password
                 </label>
-				<input type="password" name="pswd" placeholder="Enter Password" required="">
-                <input type="password" name="pswd" placeholder="Confirm Password" required="">
-				<button>Reset Password</button>
+				<input id="newPswd" type="password" name="pswd" placeholder="Enter Password" required="" onchange="setnewpswd()">
+                <input id="cnfswd" name="pswd" placeholder="Confirm Password" required="" onchange="setcnfrpswd()">
+				<button type="submit" onclick="chkvalid()">Reset Password</button>
             </form>
         </div>
         </div>>
     </body>
+    <script src="newpswd.js"></script>
+    
 </html>
