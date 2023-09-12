@@ -9,15 +9,16 @@
     <body>
         <div class="main">
         <div class="Sign In">
-            <form>
+            <form id="myForm">
                 <label>
                     Sign Up
                 </label>
-                <input type="text" name="username" placeholder="Usernsame" required="">
-                <input type="email" name="email" placeholder="Email" required="">
-				<input type="password" id="setPass" name="pswd" placeholder="Enter Password" required="" onchange="setnewPass()">
-                <input type="password" id="cnfrPass" name="pswd" placeholder="Confirm Password" required="" onchange="setcnfrPass()">
-				<button type="submit" id="signUp" onclick="checkvalid()">Sign Up</button>
+                <input type="text" id="username" placeholder="username" name="username" required>
+                <input type="email" id="email" placeholder="email"name="email" required>
+		<input type="password" id="password" name="password" placeholder="Enter Password" required>
+                <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm Password" required>
+                <span id="error-message" style="color: red;"></span>
+		<button type="submit" id="signUp" onclick="checkvalid()">Sign Up</button>
             </form>
         </div>
         </div>>
